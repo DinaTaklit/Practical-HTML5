@@ -1,19 +1,12 @@
-﻿* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
+﻿body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Verdana;
 }
 
-.main-header {
+header {
     font-weight: bold;
-    margin: 10px 0;
-    padding: 0 30px;
-    display: flex;
-    justify-content: space-around;
 }
 
 .headerlogo {
@@ -24,6 +17,10 @@ body {
 .headerlogo>img {
     height: 60px;
     width: 60px;
+}
+
+#mainHeader {
+    height: 80px;
 }
 
 nav {
@@ -59,8 +56,8 @@ nav ul li {
     background-color: #603813;
 }
 
-
 .searchbox {
+    float: right;
     padding: 5px;
     margin: 10px 10px;
     width: 200px;
@@ -74,6 +71,15 @@ nav ul li {
     font-weight: bold;
 }
 
+#welcomeimage {
+    float: left;
+    width: 700px;
+}
+
+#coffeeofthemonth {
+    float: right;
+    width: 300px;
+}
 
 #welcometext {
     float: left;
@@ -81,15 +87,13 @@ nav ul li {
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 30px;
 }
 
 #welcometext>header {
     color: #603813;
     font-size: 15px;
     font-weight: bold;
-    margin-bottom: 12px;
-    padding: 0;
+    margin-bottom: 3px;
 }
 
 #events {
@@ -97,13 +101,13 @@ nav ul li {
     width: 30%;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 30px;
 }
 
 #events>header {
+    margin-left: 10px;
     color: #603813;
     font-size: 15px;
-    margin: 12px 0;  
+    margin-bottom: 3px;
     font-weight: bold;
 }
 
@@ -120,14 +124,12 @@ nav ul li {
     width: 700px;
     float: left;
     margin-bottom: 20px;
-    padding-left: 30px;
 }
 
 #bestsellers>header {
     color: #603813;
     font-size: 15px;
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
 .coffeebestsellers {
@@ -137,7 +139,7 @@ nav ul li {
 .coffeebestsellers>header {
     background-color: #603813;
     color: white;
-    padding: 10px 0px 10px 10px;
+    padding-left: 10px;
 }
 
 .accessoriesbestsellers {
@@ -145,7 +147,8 @@ nav ul li {
 }
 
 .accessoriesbestsellers>header {
-   padding: 10px 0px 10px 10px;
+    height: 30px;
+    line-height: 30px;
     background-color: #603813;
     color: white;
     padding-left: 10px;
@@ -186,9 +189,8 @@ footer {
     clear: both;
     width: 100%;
     background-color: #5c5045;
-    margin: 20px 0px 0px;
-    color:white;
-    padding:10px 30px;
+    margin: 20px 0px 20px;
+    padding: 5px;
 }
 
 .smalltext {
@@ -259,11 +261,9 @@ footer {
 .productarticlelargeimage {
     width: 200px;
     height: 300px;
-
 }
 
 .productarticlelargefigure {
-
     float: left;
     margin: 10px;
 }
