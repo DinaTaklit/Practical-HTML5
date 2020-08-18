@@ -4,6 +4,7 @@
     <title>Welcome to Joe's Coffee Store!</title>
     <link rel="stylesheet" href="Styles/Layout.css" type="text/css" />
     <script src="scripts/videoplayer.js"></script>
+    <script src="scripts/canvasChart.js"></script>
 </head>
 <body>
     <header>
@@ -69,8 +70,15 @@
         </div>
     </section>
 
+    <div id="salesCanvasGraph">
+        <canvas id="barChart" height="800" width="750">
+            Sorry, your browser doesn't support canvas, therefore you can't see this chart! Upgrade to a new and better browser!
+        </canvas>
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", initializeVideoPlayerControls, false);
+        document.addEventListener("DOMContentLoaded", drawChart, false);
     </script>
 
 </body>
